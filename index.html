@@ -6,13 +6,13 @@
             <title>Initial Trace</title>
 
             <link rel="stylesheet" href="css/reset.min.css" type="text/css" media="all" />
-            <link rel="stylesheet" href="css/style.min.css" type="text/css" media="all" />
+            <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
     </head>
 <body>
 
 <div class="expand bg_dark">
   <div class="container">
-      <div class="menu_bar bg_dark">
+      <div class="menu_bar menu_dark">
           <ul>
             <li><a href="#">Initial Trace</a></li>
             <li>
@@ -37,28 +37,26 @@
   </div>
 </div>
 
-
-
     <div class="container">
-        <div class="page_header bo_bottom_standard">
+        <div class="page_header bd_bottom_standard">
             <h1>Lorem ipsum dolor sit amet</h1>
         </div>
-
         
-        <div class="mobile_static">
+
+        <div class="grid_lg_static">
         
             <fieldset>
                 <legend>lorem ipsum</legend>
 
-                <div class="row">
-                    <div class="grid g4">
+                <div class="row row_lg">
+                    <div class="grid g4 md6 sm12 fill_lg_outside_bottom input_field">
                         <input type="text" placeholder="Name"/>
                     </div>
 
-                    <div class="grid g4">
+                    <div class="grid g4 md6 sm12 fill_lg_outside_bottom input_field">
                         <input type="text" placeholder="Email"/>
                     </div>
-                    <div class="grid g4">
+                    <div class="grid g4 md12 input_field">
                         <input type="text" placeholder="Work"/>
                     </div>
 
@@ -105,25 +103,6 @@
             </div>
 
     </div>
-
-
-
-    <div class="fold bottom_light">
-            <div class="grid g12">
-                <h1>Message</h1>
-            </div>
-            <div class="mg mg_primary">Lorem ipsum dolor sit amet</div>
-            <div class="mg mg_secondary">Lorem ipsum dolor sit amet</div>
-            <div class="mg mg_dark">Lorem ipsum dolor sit amet</div>
-            <div class="mg mg_light">Lorem ipsum dolor sit amet</div>
-        </div>
-
-
-
-
-
-
-
         
 <div class="fold bottom_light">
             <div class="grid g12">
@@ -197,25 +176,30 @@
                 <h1>menu vertival</h1>
             </div>
 
-            <div class="mg mg_dark">
+            <div class="alert alert_dark">
                 &lt;ul class="menu_sidebar"> ... &lt;/ul>
             </div>
 
                 <div class="row">
-                    <div class="grid g3 tablet6 phone12 fill_mobile_inside_bottom">
+                    <div class="grid g3 md6 sm12 fill_lg_inside_bottom">
                      <ul class="menu_sidebar">
                          <li><a href="#">lorem</a></li>
                          <li class="has_dropdown"><a href="#">ipsum</a>
                             <ul>
                                 <li><a href="#">mauris</a></li>
-                                <li><a href="#">magna</a></li>
+                                <li class="has_dropdown"><a href="#">magna</a>
+                                     <ul>
+                                        <li><a href="#">elit</a></li>
+                                        <li><a href="#">tellus</a> </li>
+                                    </ul>   
+                                </li>
                             </ul>    
                          </li>
                          <li><a href="#">dolor</a></li>
                      </ul>    
                     </div>
 
-                    <div class="grid g9 tablet6 phone12">
+                    <div class="grid g9 md6 sm12">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Pellentesque dolor mauris, laoreet ac convallis non,
                         mattis eget tellus. Praesent vitae lobortis orci.
@@ -231,25 +215,30 @@
                 <h1>menu vertival</h1>
             </div>
 
-            <div class="mg mg_dark">
-                &lt;ul class="menu_sidebar bg_dark"> ... &lt;/ul>
+            <div class="alert alert_dark">
+                &lt;ul class="menu_sidebar menu_dark"> ... &lt;/ul>
             </div>
 
                 <div class="row">
-                    <div class="grid g3 tablet6 phone12 fill_mobile_inside_bottom">
-                     <ul class="menu_sidebar bg_dark">
+                    <div class="grid g3 md6 sm12 fill_lg_inside_bottom">
+                     <ul class="menu_sidebar menu_dark">
                          <li><a href="#">lorem</a></li>
                          <li class="has_dropdown"><a href="#">ipsum</a>
                             <ul>
                                 <li><a href="#">mauris</a></li>
-                                <li><a href="#">magna</a></li>
+                                <li class="has_dropdown"><a href="#">magna</a>
+                                    <ul>
+                                        <li><a href="#">fames</a></li>
+                                        <li><a href="#">amet</a></li>
+                                    </ul>
+                                </li>
                             </ul>    
                          </li>
                          <li><a href="#">dolor</a></li>
                      </ul>    
                     </div>
 
-                    <div class="grid g9 tablet6 phone12">
+                    <div class="grid g9 md6 sm12">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Pellentesque dolor mauris, laoreet ac convallis non,
                         mattis eget tellus. Praesent vitae lobortis orci.
@@ -260,37 +249,63 @@
         </div>
 
 
-        <div class="fold bottom_light">
             <h1>image</h1>
 
-            <div class="mg mg_dark">
-            &lt;img src="my-image.jpg" class="<span class="tx_secondary">bo_radius</span>"/> <br />
-            &lt;img src="my-image.jpg" class="<span class="tx_secondary">bo_polaroid_radius</span>"/> <br />
-            &lt;img src="my-image.jpg" class="<span class="tx_secondary">bo_polaroid</span>"/> <br />
-            &lt;img src="my-image.jpg" class="<span class="tx_secondary">bo_polaroid_radius</span>"/> <br />
+            
+
+
+        <div class="fold bottom_light">
+            <div class="expand bd bd_standard bg_light fill_inside fill_outside_bottom">
+
+            &lt;img src="..." class="<span class="tx_secondary">rounded_circle </span>"/> <br />
+            &lt;img src="..." class="<span class="tx_secondary">rounded_circle rounded_polaroid </span>"/> <br />
+            &lt;img src="..." class="<span class="tx_secondary">rounded </span>"/> <br />
+            &lt;img src="..." class="<span class="tx_secondary">rounded_polaroid </span>"/> <br />
+
             </div>
 
             <div class="row">
-                <div class="grid g3 tablet6 phone12 fill_mobile_outside_bottom">
-                    <img class="bo_radius" src="http://lorempixel.com/300/300/abstract/1/" alt="example 1">
+                <div class="grid g3 md6 sm12 fill_lg_outside_bottom">
+                    <img
+                    src="http://via.placeholder.com/250/999/fff" 
+                    alt="example" 
+                    class="rounded_circle"
+                    >
                 </div>
-                <div class="grid g3 tablet6 phone12 fill_mobile_outside_bottom">
-                    <img class="bo_polaroid_radius" src="http://lorempixel.com/300/300/abstract/1/" alt="example 1">
+
+                <div class="grid g3 md6 sm12 fill_lg_outside_bottom">
+                    <img
+                    src="http://via.placeholder.com/250/999/fff" 
+                    alt="example" 
+                    class="rounded_circle rounded_polaroid"
+                    >
                 </div>
-                <div class="grid g3 tablet6 phone12 fill_mobile_outside_bottom">
-                    <img class="bo_rounded" src="http://lorempixel.com/300/300/abstract/1/" alt="example 1">
+
+                <div class="grid g3 md6 sm12 fill_lg_outside_bottom">
+                    <img
+                    src="http://via.placeholder.com/250/999/fff" 
+                    alt="example" 
+                    class="rounded"
+                    >
                 </div>
-                <div class="grid g3 tablet6 phone12 fill_mobile_outside_bottom">
-                    <img class="bo_polaroid" src="http://lorempixel.com/300/300/abstract/1/" alt="example 1">
+
+                <div class="grid g3 md6 sm12 fill_lg_outside_bottom">
+                    <img
+                    src="http://via.placeholder.com/250/999/fff" 
+                    alt="example" 
+                    class="rounded_polaroid"
+                    >
                 </div>
             </div>
         </div>
 
 
+
+
     <div class="fold bottom_light">
             <h1>Table</h1>
 
-            <div class="mg mg_dark">
+            <div class="alert alert_dark">
                 &lt;table class="<span class="tx_secondary">tb_border</span>">
                 ...
                 &lt;/table>
@@ -333,7 +348,7 @@
 
 
             <div class="fold">
-           <div class="mg mg_dark">
+           <div class="alert alert_dark">
                 &lt;table class="<span class="tx_secondary">tb_hover</span>">
                 ...
                 &lt;/table>
@@ -375,7 +390,7 @@
 
 
 <div class="fold">
-            <div class="mg mg_dark">
+            <div class="alert alert_dark">
                 &lt;table class="<span class="tx_secondary">tb_striped</span>">
                 ...
                 &lt;/table>

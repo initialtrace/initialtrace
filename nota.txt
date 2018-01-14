@@ -1,0 +1,7 @@
+xs - extra small 
+phone   - grid_sm = small
+tablet  - grid_md = medium
+mobile - grid_lg = large
+desktop   - grid_xl = extra large
+
+
